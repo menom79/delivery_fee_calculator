@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.10.11 on win32)" generated="20240131 04:12:56.981" rpa="false" schemaversion="4">
+<suite id="s1" name="Test Suite" source="D:\e\wolt_app\fee-calculator\test\test_suite.robot">
+<test id="s1-t1" name="Open Application" line="11">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240131 04:12:57.131" level="INFO">Opening browser 'firefox' to base url 'http://localhost:5173'.</msg>
+<msg timestamp="20240131 04:12:57.138" level="INFO">Executing: C:\Users\LENOVO\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser firefox --output json</msg>
+<status status="PASS" starttime="20240131 04:12:57.131" endtime="20240131 04:13:04.968"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240131 04:13:04.968" endtime="20240131 04:13:05.251"/>
+</kw>
+<status status="PASS" starttime="20240131 04:12:57.131" endtime="20240131 04:13:05.251"/>
+</test>
+<test id="s1-t2" name="Test Delivery Fee Calculation" line="15">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=cartValue</arg>
+<arg>8.90</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:05.259" level="INFO">Typing text '8.90' into text field 'id=cartValue'.</msg>
+<status status="PASS" starttime="20240131 04:13:05.259" endtime="20240131 04:13:05.338"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=deliveryDistance</arg>
+<arg>1000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:05.338" level="INFO">Typing text '1000' into text field 'id=deliveryDistance'.</msg>
+<status status="PASS" starttime="20240131 04:13:05.338" endtime="20240131 04:13:05.370"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=amountOfItems</arg>
+<arg>1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:05.370" level="INFO">Typing text '1' into text field 'id=amountOfItems'.</msg>
+<status status="PASS" starttime="20240131 04:13:05.370" endtime="20240131 04:13:05.385"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:05.251" endtime="20240131 04:13:05.385"/>
+</test>
+<test id="s1-t3" name="Click Calculate Button" line="21">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div[2]/form/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:05.385" level="INFO">Clicking button '//*[@id="root"]/div/div[2]/form/input'.</msg>
+<status status="PASS" starttime="20240131 04:13:05.385" endtime="20240131 04:13:05.622"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:05.385" endtime="20240131 04:13:05.622"/>
+</test>
+<test id="s1-t4" name="Reload the page" line="25">
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" starttime="20240131 04:13:05.622" endtime="20240131 04:13:07.784"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:05.622" endtime="20240131 04:13:07.785"/>
+</test>
+<test id="s1-t5" name="Test Delivery Fee Calculation" line="28">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=cartValue</arg>
+<arg>8.90</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:07.788" level="INFO">Typing text '8.90' into text field 'id=cartValue'.</msg>
+<status status="PASS" starttime="20240131 04:13:07.788" endtime="20240131 04:13:07.816"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=deliveryDistance</arg>
+<arg>1499</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:07.817" level="INFO">Typing text '1499' into text field 'id=deliveryDistance'.</msg>
+<status status="PASS" starttime="20240131 04:13:07.817" endtime="20240131 04:13:07.838"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=amountOfItems</arg>
+<arg>1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:07.838" level="INFO">Typing text '1' into text field 'id=amountOfItems'.</msg>
+<status status="PASS" starttime="20240131 04:13:07.838" endtime="20240131 04:13:07.854"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:07.787" endtime="20240131 04:13:07.855"/>
+</test>
+<test id="s1-t6" name="Click Calculate Button" line="34">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div[2]/form/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:07.856" level="INFO">Clicking button '//*[@id="root"]/div/div[2]/form/input'.</msg>
+<status status="PASS" starttime="20240131 04:13:07.856" endtime="20240131 04:13:08.074"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:07.855" endtime="20240131 04:13:08.075"/>
+</test>
+<test id="s1-t7" name="Reload the page" line="38">
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" starttime="20240131 04:13:08.079" endtime="20240131 04:13:10.242"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:08.078" endtime="20240131 04:13:10.242"/>
+</test>
+<test id="s1-t8" name="Test Delivery Fee Calculation" line="41">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=cartValue</arg>
+<arg>8.90</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:10.245" level="INFO">Typing text '8.90' into text field 'id=cartValue'.</msg>
+<status status="PASS" starttime="20240131 04:13:10.244" endtime="20240131 04:13:10.270"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=deliveryDistance</arg>
+<arg>1500</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:10.271" level="INFO">Typing text '1500' into text field 'id=deliveryDistance'.</msg>
+<status status="PASS" starttime="20240131 04:13:10.271" endtime="20240131 04:13:10.291"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=amountOfItems</arg>
+<arg>1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:10.292" level="INFO">Typing text '1' into text field 'id=amountOfItems'.</msg>
+<status status="PASS" starttime="20240131 04:13:10.291" endtime="20240131 04:13:10.308"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:10.244" endtime="20240131 04:13:10.309"/>
+</test>
+<test id="s1-t9" name="Click Calculate Button" line="47">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div[2]/form/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:10.311" level="INFO">Clicking button '//*[@id="root"]/div/div[2]/form/input'.</msg>
+<status status="PASS" starttime="20240131 04:13:10.310" endtime="20240131 04:13:10.530"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:10.310" endtime="20240131 04:13:10.531"/>
+</test>
+<test id="s1-t10" name="Reload the page" line="51">
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" starttime="20240131 04:13:10.534" endtime="20240131 04:13:12.707"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:10.533" endtime="20240131 04:13:12.708"/>
+</test>
+<test id="s1-t11" name="Test Delivery Fee Calculation" line="54">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=cartValue</arg>
+<arg>8.90</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:12.711" level="INFO">Typing text '8.90' into text field 'id=cartValue'.</msg>
+<status status="PASS" starttime="20240131 04:13:12.710" endtime="20240131 04:13:12.738"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=deliveryDistance</arg>
+<arg>1501</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:12.739" level="INFO">Typing text '1501' into text field 'id=deliveryDistance'.</msg>
+<status status="PASS" starttime="20240131 04:13:12.739" endtime="20240131 04:13:12.759"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=amountOfItems</arg>
+<arg>1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:12.760" level="INFO">Typing text '1' into text field 'id=amountOfItems'.</msg>
+<status status="PASS" starttime="20240131 04:13:12.759" endtime="20240131 04:13:12.787"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:12.710" endtime="20240131 04:13:12.788"/>
+</test>
+<test id="s1-t12" name="Click Calculate Button" line="60">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div[2]/form/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:12.789" level="INFO">Clicking button '//*[@id="root"]/div/div[2]/form/input'.</msg>
+<status status="PASS" starttime="20240131 04:13:12.789" endtime="20240131 04:13:13.008"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:12.789" endtime="20240131 04:13:13.008"/>
+</test>
+<test id="s1-t13" name="Reload the page" line="64">
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" starttime="20240131 04:13:13.010" endtime="20240131 04:13:15.201"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:13.009" endtime="20240131 04:13:15.202"/>
+</test>
+<test id="s1-t14" name="Test Delivery Fee Calculation" line="67">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=cartValue</arg>
+<arg>8.90</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:15.205" level="INFO">Typing text '8.90' into text field 'id=cartValue'.</msg>
+<status status="PASS" starttime="20240131 04:13:15.204" endtime="20240131 04:13:15.240"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=deliveryDistance</arg>
+<arg>1501</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:15.241" level="INFO">Typing text '1501' into text field 'id=deliveryDistance'.</msg>
+<status status="PASS" starttime="20240131 04:13:15.241" endtime="20240131 04:13:15.260"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=amountOfItems</arg>
+<arg>4</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:15.261" level="INFO">Typing text '4' into text field 'id=amountOfItems'.</msg>
+<status status="PASS" starttime="20240131 04:13:15.261" endtime="20240131 04:13:15.276"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:15.204" endtime="20240131 04:13:15.276"/>
+</test>
+<test id="s1-t15" name="Click Calculate Button" line="73">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div[2]/form/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:15.278" level="INFO">Clicking button '//*[@id="root"]/div/div[2]/form/input'.</msg>
+<status status="PASS" starttime="20240131 04:13:15.278" endtime="20240131 04:13:15.504"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:15.277" endtime="20240131 04:13:15.505"/>
+</test>
+<test id="s1-t16" name="Reload the page" line="77">
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" starttime="20240131 04:13:15.508" endtime="20240131 04:13:17.681"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:15.508" endtime="20240131 04:13:17.682"/>
+</test>
+<test id="s1-t17" name="Test Delivery Fee Calculation" line="80">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=cartValue</arg>
+<arg>8.90</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:17.684" level="INFO">Typing text '8.90' into text field 'id=cartValue'.</msg>
+<status status="PASS" starttime="20240131 04:13:17.684" endtime="20240131 04:13:17.724"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=deliveryDistance</arg>
+<arg>1501</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:17.724" level="INFO">Typing text '1501' into text field 'id=deliveryDistance'.</msg>
+<status status="PASS" starttime="20240131 04:13:17.724" endtime="20240131 04:13:17.744"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=amountOfItems</arg>
+<arg>5</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:17.744" level="INFO">Typing text '5' into text field 'id=amountOfItems'.</msg>
+<status status="PASS" starttime="20240131 04:13:17.744" endtime="20240131 04:13:17.759"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:17.683" endtime="20240131 04:13:17.760"/>
+</test>
+<test id="s1-t18" name="Click Calculate Button" line="86">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div[2]/form/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:17.761" level="INFO">Clicking button '//*[@id="root"]/div/div[2]/form/input'.</msg>
+<status status="PASS" starttime="20240131 04:13:17.761" endtime="20240131 04:13:17.981"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:17.761" endtime="20240131 04:13:17.981"/>
+</test>
+<test id="s1-t19" name="Reload the page" line="90">
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" starttime="20240131 04:13:17.981" endtime="20240131 04:13:20.159"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:17.981" endtime="20240131 04:13:20.159"/>
+</test>
+<test id="s1-t20" name="Test Delivery Fee Calculation" line="93">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=cartValue</arg>
+<arg>8.90</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:20.163" level="INFO">Typing text '8.90' into text field 'id=cartValue'.</msg>
+<status status="PASS" starttime="20240131 04:13:20.163" endtime="20240131 04:13:20.188"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=deliveryDistance</arg>
+<arg>1501</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:20.188" level="INFO">Typing text '1501' into text field 'id=deliveryDistance'.</msg>
+<status status="PASS" starttime="20240131 04:13:20.188" endtime="20240131 04:13:20.209"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=amountOfItems</arg>
+<arg>10</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:20.209" level="INFO">Typing text '10' into text field 'id=amountOfItems'.</msg>
+<status status="PASS" starttime="20240131 04:13:20.209" endtime="20240131 04:13:20.226"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:20.162" endtime="20240131 04:13:20.226"/>
+</test>
+<test id="s1-t21" name="Click Calculate Button" line="99">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div[2]/form/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:20.228" level="INFO">Clicking button '//*[@id="root"]/div/div[2]/form/input'.</msg>
+<status status="PASS" starttime="20240131 04:13:20.227" endtime="20240131 04:13:20.450"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:20.227" endtime="20240131 04:13:20.451"/>
+</test>
+<test id="s1-t22" name="Reload the page" line="103">
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" starttime="20240131 04:13:20.455" endtime="20240131 04:13:22.638"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:20.454" endtime="20240131 04:13:22.639"/>
+</test>
+<test id="s1-t23" name="Test Delivery Fee Calculation" line="106">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=cartValue</arg>
+<arg>8.90</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:22.641" level="INFO">Typing text '8.90' into text field 'id=cartValue'.</msg>
+<status status="PASS" starttime="20240131 04:13:22.640" endtime="20240131 04:13:22.673"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=deliveryDistance</arg>
+<arg>1501</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:22.674" level="INFO">Typing text '1501' into text field 'id=deliveryDistance'.</msg>
+<status status="PASS" starttime="20240131 04:13:22.674" endtime="20240131 04:13:22.694"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=amountOfItems</arg>
+<arg>13</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:22.695" level="INFO">Typing text '13' into text field 'id=amountOfItems'.</msg>
+<status status="PASS" starttime="20240131 04:13:22.694" endtime="20240131 04:13:22.711"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:22.640" endtime="20240131 04:13:22.711"/>
+</test>
+<test id="s1-t24" name="Click Calculate Button" line="112">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div[2]/form/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:22.713" level="INFO">Clicking button '//*[@id="root"]/div/div[2]/form/input'.</msg>
+<status status="PASS" starttime="20240131 04:13:22.712" endtime="20240131 04:13:22.934"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:22.712" endtime="20240131 04:13:22.935"/>
+</test>
+<test id="s1-t25" name="Reload the page" line="116">
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" starttime="20240131 04:13:22.939" endtime="20240131 04:13:25.113"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:22.938" endtime="20240131 04:13:25.113"/>
+</test>
+<test id="s1-t26" name="Test Delivery Fee Calculation" line="119">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=cartValue</arg>
+<arg>8.90</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:25.118" level="INFO">Typing text '8.90' into text field 'id=cartValue'.</msg>
+<status status="PASS" starttime="20240131 04:13:25.117" endtime="20240131 04:13:25.141"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=deliveryDistance</arg>
+<arg>1501</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:25.141" level="INFO">Typing text '1501' into text field 'id=deliveryDistance'.</msg>
+<status status="PASS" starttime="20240131 04:13:25.141" endtime="20240131 04:13:25.161"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=amountOfItems</arg>
+<arg>14</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:25.161" level="INFO">Typing text '14' into text field 'id=amountOfItems'.</msg>
+<status status="PASS" starttime="20240131 04:13:25.161" endtime="20240131 04:13:25.178"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:25.117" endtime="20240131 04:13:25.179"/>
+</test>
+<test id="s1-t27" name="Click Calculate Button" line="125">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div[2]/form/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:25.180" level="INFO">Clicking button '//*[@id="root"]/div/div[2]/form/input'.</msg>
+<status status="PASS" starttime="20240131 04:13:25.180" endtime="20240131 04:13:25.401"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:25.179" endtime="20240131 04:13:25.402"/>
+</test>
+<test id="s1-t28" name="Reload the page" line="129">
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" starttime="20240131 04:13:25.408" endtime="20240131 04:13:27.592"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:25.407" endtime="20240131 04:13:27.593"/>
+</test>
+<test id="s1-t29" name="Test Delivery Fee Calculation" line="132">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=cartValue</arg>
+<arg>200</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:27.597" level="INFO">Typing text '200' into text field 'id=cartValue'.</msg>
+<status status="PASS" starttime="20240131 04:13:27.596" endtime="20240131 04:13:27.631"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=deliveryDistance</arg>
+<arg>1501</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:27.631" level="INFO">Typing text '1501' into text field 'id=deliveryDistance'.</msg>
+<status status="PASS" starttime="20240131 04:13:27.631" endtime="20240131 04:13:27.650"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=amountOfItems</arg>
+<arg>14</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:27.651" level="INFO">Typing text '14' into text field 'id=amountOfItems'.</msg>
+<status status="PASS" starttime="20240131 04:13:27.650" endtime="20240131 04:13:27.666"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:27.596" endtime="20240131 04:13:27.667"/>
+</test>
+<test id="s1-t30" name="Click Calculate Button" line="138">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div[2]/form/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240131 04:13:27.670" level="INFO">Clicking button '//*[@id="root"]/div/div[2]/form/input'.</msg>
+<status status="PASS" starttime="20240131 04:13:27.669" endtime="20240131 04:13:27.888"/>
+</kw>
+<status status="PASS" starttime="20240131 04:13:27.668" endtime="20240131 04:13:27.889"/>
+</test>
+<status status="PASS" starttime="20240131 04:12:56.981" endtime="20240131 04:13:27.891"/>
+</suite>
+<statistics>
+<total>
+<stat pass="30" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="30" fail="0" skip="0" id="s1" name="Test Suite">Test Suite</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240131 04:13:07.787" level="WARN">Multiple tests with name 'Test Delivery Fee Calculation' executed in suite 'Test Suite'.</msg>
+<msg timestamp="20240131 04:13:07.855" level="WARN">Multiple tests with name 'Click Calculate Button' executed in suite 'Test Suite'.</msg>
+<msg timestamp="20240131 04:13:08.077" level="WARN">Multiple tests with name 'Reload the page' executed in suite 'Test Suite'.</msg>
+<msg timestamp="20240131 04:13:10.243" level="WARN">Multiple tests with name 'Test Delivery Fee Calculation' executed in suite 'Test Suite'.</msg>
+<msg timestamp="20240131 04:13:10.310" level="WARN">Multiple tests with name 'Click Calculate Button' executed in suite 'Test Suite'.</msg>
+<msg timestamp="20240131 04:13:10.533" level="WARN">Multiple tests with name 'Reload the page' executed in suite 'Test Suite'.</msg>
+<msg timestamp="20240131 04:13:12.709" level="WARN">Multiple tests with name 'Test Delivery Fee Calculation' executed in suite 'Test Suite'.</msg>
+<msg timestamp="20240131 04:13:12.788" level="WARN">Multiple tests with name 'Click Calculate Button' executed in suite 'Test Suite'.</msg>
+<msg timestamp="20240131 04:13:13.009" level="WARN">Multiple tests with name 'Reload the page' executed in suite 'Test Suite'.</msg>
+<msg timestamp="20240131 04:13:15.203" level="WARN">Multiple tests with name 'Test Delivery Fee Calculation' executed in suite 'Test Suite'.</msg>
+<msg timestamp="20240131 04:13:15.277" level="WARN">Multiple tests with name 'Click Calculate Button' executed in suite 'Test Suite'.</msg>
+<msg timestamp="20240131 04:13:15.507" level="WARN">Multiple tests with name 'Reload the page' executed in suite 'Test Suite'.</msg>
+<msg timestamp="20240131 04:13:17.683" level="WARN">Multiple tests with name 'Test Delivery Fee Calculation' executed in suite 'Test Suite'.</msg>
+<msg timestamp="20240131 04:13:17.761" level="WARN">Multiple tests with name 'Click Calculate Button' executed in suite 'Test Suite'.</msg>
+<msg timestamp="20240131 04:13:17.981" level="WARN">Multiple tests with name 'Reload the page' executed in suite 'Test Suite'.</msg>
+<msg timestamp="20240131 04:13:20.161" level="WARN">Multiple tests with name 'Test Delivery Fee Calculation' executed in suite 'Test Suite'.</msg>
+<msg timestamp="20240131 04:13:20.227" level="WARN">Multiple tests with name 'Click Calculate Button' executed in suite 'Test Suite'.</msg>
+<msg timestamp="20240131 04:13:20.454" level="WARN">Multiple tests with name 'Reload the page' executed in suite 'Test Suite'.</msg>
+<msg timestamp="20240131 04:13:22.639" level="WARN">Multiple tests with name 'Test Delivery Fee Calculation' executed in suite 'Test Suite'.</msg>
+<msg timestamp="20240131 04:13:22.712" level="WARN">Multiple tests with name 'Click Calculate Button' executed in suite 'Test Suite'.</msg>
+<msg timestamp="20240131 04:13:22.937" level="WARN">Multiple tests with name 'Reload the page' executed in suite 'Test Suite'.</msg>
+<msg timestamp="20240131 04:13:25.116" level="WARN">Multiple tests with name 'Test Delivery Fee Calculation' executed in suite 'Test Suite'.</msg>
+<msg timestamp="20240131 04:13:25.179" level="WARN">Multiple tests with name 'Click Calculate Button' executed in suite 'Test Suite'.</msg>
+<msg timestamp="20240131 04:13:25.405" level="WARN">Multiple tests with name 'Reload the page' executed in suite 'Test Suite'.</msg>
+<msg timestamp="20240131 04:13:27.595" level="WARN">Multiple tests with name 'Test Delivery Fee Calculation' executed in suite 'Test Suite'.</msg>
+<msg timestamp="20240131 04:13:27.668" level="WARN">Multiple tests with name 'Click Calculate Button' executed in suite 'Test Suite'.</msg>
+</errors>
+</robot>

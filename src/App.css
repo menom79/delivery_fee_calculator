@@ -1,0 +1,32 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.fee-container {
+  width: 20vw;
+  min-width: 300px;
+  border: 2px solid;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.title-section {
+  margin-bottom: 10px;
+}
+
+.main-section {
+  margin-bottom: 10px;
+}
+
+.submit-btn {
+  margin-top: 10px;
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
